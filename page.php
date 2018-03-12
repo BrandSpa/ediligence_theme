@@ -34,7 +34,7 @@ else { $paged = 1; }
 			var page_scroll_amount_for_sticky = <?php echo get_post_meta($id, "qode_page_scroll_amount_for_sticky", true); ?>;
 			</script>
 		<?php } ?>
-			<?php get_template_part( 'title' ); ?>...
+			<?php get_template_part( 'title' ); ?>
 		<?php
 		$revslider = get_post_meta($id, "qode_revolution-slider", true);
 		if (!empty($revslider)){ ?>
