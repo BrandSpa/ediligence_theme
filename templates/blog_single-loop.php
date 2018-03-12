@@ -237,7 +237,7 @@ $_post_format = get_post_format();
 						</div>
 				<?php } } ?>
 				<div class="post_container_flex">
-					<div class="post_text">
+					<div class="post_text <?php echo is_active_sidebar( 'posts_sidebar' ) ? 'small_content':'' ?>">
 						<div class="post_text_inner">
 							<h2 itemprop="name" class="entry_title">
 								<?php the_title(); ?>
@@ -266,7 +266,7 @@ $_post_format = get_post_format();
 						<div class="post_sidebar">
 							<?php dynamic_sidebar( 'posts_sidebar' ); ?>
 						</div>
-						
+
 					<?php endif; ?>
 					
 				</div>
