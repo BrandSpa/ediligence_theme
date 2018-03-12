@@ -47,7 +47,7 @@ if($single_type == 'image-title-post'){
 		var page_scroll_amount_for_sticky = <?php echo get_post_meta($id, "qode_page_scroll_amount_for_sticky", true); ?>;
 		</script>
 	<?php } ?>
-	<?php get_template_part( 'title' ); ?>
+
 	<?php get_template_part( 'slider' ); ?>
 				<?php if($single_type == 'image-title-post') : //this post type is full width ?>
 					<div class="full_width" <?php if($background_color != "") { echo " style='background-color:". $background_color ."'";} ?>>
