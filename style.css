@@ -37,3 +37,7 @@ span.date.entry_date.updated:after {
 .full_section_inner.clearfix {
     margin-top: 2em;
 }
+
+post_container_flex{
+    display: flex;
+}
