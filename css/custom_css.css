@@ -1,0 +1,52 @@
+
+
+footer .column1 {
+position: relative;
+top: -18px;
+}
+
+nav.main_menu > ul > li > a {
+    font-family: 'Oxygen Mono', sans-serif !important;
+     padding: 0px 11px !important;
+}
+
+input.wpcf7-form-control.wpcf7-submit:not([disabled]) {
+    border: 2px solid #ffffff;
+    color: #fff;
+    border-radius: 0;
+    font-size: 1em;
+    letter-spacing: 5px;
+}
+
+input.wpcf7-form-control.wpcf7-submit:not([disabled]):hover {
+    background-color: #39097f;
+    border-color: #f7f7f7;
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, p:hover  {
+    color: #50485b;
+}
+
+::selection {
+    background: #50485b;
+    color: #fff;
+}
+
+.container_inner.default_template_holder {
+    padding-top: 0px !important;
+    width: 100% !important;
+
+}
+
+.post_text {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.blog_holder.blog_single article h2 {
+    margin-bottom: 0.5em;
+    color: #39097f;
+}
+
