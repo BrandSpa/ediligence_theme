@@ -40,7 +40,7 @@ span.date.entry_date.updated:after {
 
 .post_container_flex{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .post_container_flex .post_text{
