@@ -47,7 +47,7 @@ if($single_type == 'image-title-post'){
 		var page_scroll_amount_for_sticky = <?php echo get_post_meta($id, "qode_page_scroll_amount_for_sticky", true); ?>;
 		</script>
 	<?php } ?>
-	<?php get_template_part( 'title' ); ?>
+	
 	<?php get_template_part( 'slider' ); ?>
 				<?php if($single_type == 'image-title-post') : //this post type is full width ?>
 					<div class="full_width" <?php if($background_color != "") { echo " style='background-color:". $background_color ."'";} ?>>
@@ -63,7 +63,7 @@ if($single_type == 'image-title-post'){
 								<div class="container_inner default_template_holder" <?php qode_inline_style($content_style_spacing); ?>>
 				<?php endif; // post type end ?>
 					<?php if(($sidebar == "default")||($sidebar == "")) : ?>
-						<div <?php qode_class_attribute(implode(' ')) ?>>
+						<div <?php qode_class_attribute(implode(' ', $single_class)) ?>>
 						<?php 
 							get_template_part('templates/' . $single_loop, 'loop');
 						?>
