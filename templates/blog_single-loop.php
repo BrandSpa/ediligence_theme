@@ -236,32 +236,34 @@ $_post_format = get_post_format();
 	                        <?php the_post_thumbnail('full'); ?>
 						</div>
 				<?php } } ?>
-				<div class="post_text">
-					<div class="post_text_inner">
-						<h2 itemprop="name" class="entry_title">
-							<?php the_title(); ?>
-							<span itemprop="dateCreated" class="date entry_date updated">
-								<?php the_time('d M, Y'); ?>
-									<meta itemprop="interactionCount" content="UserComments: <?php echo get_comments_number(qode_get_page_id()); ?>"/>
-							</span>
-						</h2>
-						<div class="post_info">
-							<span class="time"><?php _e('Posted at','qode'); ?> <?php the_time('H:i'); ?><?php _e('h','qode'); ?></span>
-							<?php _e('in','qode'); ?> <?php the_category(', '); ?>
-							<span class="post_author">
-								<?php _e('by','qode'); ?>
-								<a itemprop="author" class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author_meta('display_name'); ?></a>
-							</span>
-							<?php if($blog_hide_comments != "yes"){ ?>
-								<span class="dots"><i class="fa fa-square"></i></span><a itemprop="url" class="post_comments" href="<?php comments_link(); ?>" target="_self"><?php comments_number('0 ' . __('Comments','qode'), '1 '.__('Comment','qode'), '% '.__('Comments','qode') ); ?></a>
-							<?php } ?>
-                            <?php qode_get_template_part('templates/blog-parts/blog','share-like-post-info',$params); ?>
+				<div class="post_container_flex">
+					<div class="post_text">
+						<div class="post_text_inner">
+							<h2 itemprop="name" class="entry_title">
+								<?php the_title(); ?>
+								<span itemprop="dateCreated" class="date entry_date updated">
+									<?php the_time('d M, Y'); ?>
+										<meta itemprop="interactionCount" content="UserComments: <?php echo get_comments_number(qode_get_page_id()); ?>"/>
+								</span>
+							</h2>
+							<div class="post_info">
+								<span class="time"><?php _e('Posted at','qode'); ?> <?php the_time('H:i'); ?><?php _e('h','qode'); ?></span>
+								<?php _e('in','qode'); ?> <?php the_category(', '); ?>
+								<span class="post_author">
+									<?php _e('by','qode'); ?>
+									<a itemprop="author" class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author_meta('display_name'); ?></a>
+								</span>
+								<?php if($blog_hide_comments != "yes"){ ?>
+									<span class="dots"><i class="fa fa-square"></i></span><a itemprop="url" class="post_comments" href="<?php comments_link(); ?>" target="_self"><?php comments_number('0 ' . __('Comments','qode'), '1 '.__('Comment','qode'), '% '.__('Comments','qode') ); ?></a>
+								<?php } ?>
+								<?php qode_get_template_part('templates/blog-parts/blog','share-like-post-info',$params); ?>
+							</div>
+							<?php the_content(); ?>
 						</div>
-						<?php the_content(); ?>
 					</div>
-				</div>
-				<div class="post_sidebar">
-					Sidebar - development
+					<div class="post_sidebar">
+						Sidebar - development
+					</div>
 				</div>
 			</div>
 		
