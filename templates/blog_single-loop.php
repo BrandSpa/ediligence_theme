@@ -260,8 +260,8 @@ $_post_format = get_post_format();
 						<?php the_content(); ?>
 					</div>
 				</div>
-				<div class="post-sidebar">
-
+				<div class="post_sidebar">
+					Sidebar - development
 				</div>
 			</div>
 		
