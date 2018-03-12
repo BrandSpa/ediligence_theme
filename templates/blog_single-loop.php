@@ -241,7 +241,7 @@ $_post_format = get_post_format();
 						<h2 itemprop="name" class="entry_title">
 							<?php the_title(); ?>
 							<span itemprop="dateCreated" class="date entry_date updated">
-								<?php the_time('d M'); ?>
+								<?php the_time('d M, Y'); ?>
 									<meta itemprop="interactionCount" content="UserComments: <?php echo get_comments_number(qode_get_page_id()); ?>"/>
 							</span>
 						</h2>
