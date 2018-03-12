@@ -41,6 +41,7 @@ span.date.entry_date.updated:after {
 .post_container_flex{
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .post_container_flex .post_text{
@@ -50,4 +51,17 @@ span.date.entry_date.updated:after {
 
 .post_container_flex .post_sidebar{
     width: 20%;
+    padding: 23px 10px;
+    margin-left: 10px;
+    border-left: 1px solid;
+    position: relative;
+}
+
+.post_container_flex .post_sidebar:before {
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 2px;
+    background: #ccc;
+    height: 100%;
 }
