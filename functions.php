@@ -2746,3 +2746,17 @@ if(!function_exists('qode_get_mobile_menu_icon_html')) {
         return $icon_html;
     }
 }
+
+function flexbox_posts_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Posts Sidebar',
+		'id'            => 'posts_sidebar',
+		'before_widget' => '<div class="posts-widgets">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="posts-widgets-title">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'flexbox_posts_widgets_init' );

@@ -261,9 +261,14 @@ $_post_format = get_post_format();
 							<?php the_content(); ?>
 						</div>
 					</div>
-					<div class="post_sidebar">
-						Sidebar - development
-					</div>
+					<?php if ( is_active_sidebar( 'posts_sidebar' ) ) : ?>
+
+						<div class="post_sidebar">
+							<?php dynamic_sidebar( 'posts_sidebar' ); ?>
+						</div>
+						
+					<?php endif; ?>
+					
 				</div>
 			</div>
 		
