@@ -63,7 +63,7 @@ if($single_type == 'image-title-post'){
 								<div class="container_inner default_template_holder" <?php qode_inline_style($content_style_spacing); ?>>
 				<?php endif; // post type end ?>
 					<?php if(($sidebar == "default")||($sidebar == "")) : ?>
-						<div <?php qode_class_attribute(implode(' ', $single_class)) ?>>
+						<div <?php qode_class_attribute(implode(' ')) ?>>
 						<?php 
 							get_template_part('templates/' . $single_loop, 'loop');
 						?>
