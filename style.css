@@ -18,6 +18,7 @@ span.date.entry_date.updated {
     display: block;
     color: #39097f !important;
     font-size: .8rem;
+    padding-top: 15px;
 }
 
 span.date.entry_date.updated:after {
