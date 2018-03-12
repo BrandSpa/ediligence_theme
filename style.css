@@ -38,6 +38,6 @@ span.date.entry_date.updated:after {
     margin-top: 2em;
 }
 
-post_container_flex{
+.post_container_flex{
     display: flex;
 }
