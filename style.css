@@ -19,6 +19,15 @@ span.date.entry_date.updated {
     color: #39097f;
 }
 
+span.date.entry_date.updated:after {
+    content: "";
+    display: block;
+    background: #3c247e;
+    width: 3rem;
+    height: 2px;
+    margin-top: 15px;
+}
+
 .post_info {
     display: none !important;
 }
