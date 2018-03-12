@@ -15,7 +15,7 @@ CSS changes can be made in files in the /css/ folder. This is a placeholder file
 
 
 span.date.entry_date.updated {
-    display: none;
+    display: block;
 }
 
 .post_info {
