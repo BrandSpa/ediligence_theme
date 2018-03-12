@@ -65,7 +65,6 @@ if($single_type == 'image-title-post'){
 					<?php if(($sidebar == "default")||($sidebar == "")) : ?>
 						<div <?php qode_class_attribute(implode(' ', $single_class));?>>
 						<?php 
-							 print_r($single_loop);
 							get_template_part('templates/' . $single_loop, 'loop');
 						?>
 						<?php if($single_grid == 'no'): ?>

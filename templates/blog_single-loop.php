@@ -32,6 +32,7 @@ $params = array(
 $_post_format = get_post_format();
 ?>
 <?php
+	print_r($_post_format);
 	switch ($_post_format) {
 		case "video":
 ?>
