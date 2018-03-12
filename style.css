@@ -16,7 +16,8 @@ CSS changes can be made in files in the /css/ folder. This is a placeholder file
 
 span.date.entry_date.updated {
     display: block;
-    color: #39097f;
+    color: #39097f !important;
+    font-size: .8rem;
 }
 
 span.date.entry_date.updated:after {
