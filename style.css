@@ -62,7 +62,7 @@ span.date.entry_date.updated:after {
     background: #ccc;
     height: 100%;
 }
-@media screen and (min-width: 760px){
+@media screen and (min-width: 970px){
     .post_container_flex .post_sidebar{
         display: block;
     }
